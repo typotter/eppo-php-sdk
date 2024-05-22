@@ -7,5 +7,5 @@ The example server pegs SimpleCache to version 2.* as the default cache used by 
 `opsr/simple-cache@3.*`. This workaround is not necessary with `eppo/php-sdk` version 3 or greater
 as this pinning is done in the `eppo/php-sdk` package.
 
-`guzzle/http` is installed to provide implementations of `ClientInterface` and `RequestFactory` as
+`guzzlehttp/guzzle` is installed to provide implementations of `ClientInterface` and `RequestFactory` as
 otherwise, there are no available implementations.
