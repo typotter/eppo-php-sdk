@@ -5,10 +5,6 @@
     "require": {
         "psr/simple-cache": "2.*",
         "eppo/php-sdk": "^1.2",
-        "shrikeh/teapot": "^2.3",
-        "composer/semver": "^3.4",
-        "php-http/discovery": "^1.17",
-        "webclient/ext-redirect": "^2.0",
         "guzzlehttp/guzzle": "^7.0"
     },
     "license": "MIT",
