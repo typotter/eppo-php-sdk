@@ -5,6 +5,10 @@ use Eppo\Logger\LoggerInterface;
 
 require __DIR__ . '/vendor/autoload.php';
 
+// .env file for API creds
+$env = parse_ini_file(__DIR__ . '/.env');
+$apiKey = $env['EPPO_API_KEY'];
+
 // Create a basic logger class to record flag assignments.
 class MyLogger implements LoggerInterface
 {
@@ -17,7 +21,7 @@ $assignmentLogger = new MyLogger();
 
 
 $eppoClient = EppoClient::init(
-    '<your API key>', assignmentLogger: $assignmentLogger,
+    $apiKey, assignmentLogger: $assignmentLogger,
 );
 
 $assignment = $eppoClient->getBooleanAssignment('a-boolean-flag', '100', ['userId' => '100'], false);
