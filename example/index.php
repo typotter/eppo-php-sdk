@@ -1,6 +1,4 @@
 <?php
-print("hello, world");
-
 use Eppo\EppoClient;
 
 require __DIR__ . '/vendor/autoload.php';
